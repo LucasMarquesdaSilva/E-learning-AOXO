@@ -1,0 +1,30 @@
+﻿@model Fatec.Treinamento.Model.Usuario
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Painel do Instrutor</h1>
+<hr />
+
+<div class="row">
+    <div id="sidebar" class="col-md-3 col-xs-12">
+
+        <div id="foto">
+            <img src="~/img/tim.jpg" />
+        </div>
+        <div id="dados">
+            <h1>@Html.DisplayFor(model => model.Nome)</h1>
+            <h2>@Html.DisplayFor(model => model.Email)</h2>
+            <h2><a href="">Mensagens(76)</a></h2>
+            <h3>ID:<b>@Html.DisplayFor(model => model.Id)</b></h3>
+        </div>
+    </div>
+    <div class="content col-md-9 col-xs-12">
+        <div id="meus-cursos">
+            <h1>@Html.ActionLink("Alunos", "index", "InstrutorAlunos")</h1>
+            <hr />
+            <h1>@Html.ActionLink("Cursos", "index", "InstrutorCursos")</h1>
+        </div>
+    </div>
+    </div>
+
+ 

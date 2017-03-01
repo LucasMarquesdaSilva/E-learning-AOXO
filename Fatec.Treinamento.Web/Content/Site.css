@@ -1,0 +1,411 @@
+﻿html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+   Margin bottom by footer height 
+    margin-bottom: 60px;
+  
+    padding-top: 50px;
+    
+    font-size: 15px;
+}
+
+ /*Set padding to keep content from hitting the edges*/ 
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:20px;
+}
+.content-login{
+    padding-top: 60px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+.panel{
+    width: 20%;
+    margin: auto;
+    min-width: 300px;
+}
+.panel-body{
+    margin: 0 1em 0 1em;
+}
+.title-login{
+    text-align: center;
+    color: #26a998;
+}
+.btn-login{
+    width: 100%;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+}
+
+#detalhes-inicio{
+    margin-top: 45em;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 4em;
+}
+.navbar-container{
+    width: 90%;
+}
+@media (max-width: 450px) {
+    #detalhes-inicio {
+         margin-top: 18em;
+    }
+}
+@media(min-width: 451px ) and (max-width: 768px ){
+    #detalhes-inicio {
+        margin-top: 29em;
+    }
+    .full-width-div {
+        margin-top: 3em;
+    }
+}
+/*#banner-inicio{
+    background-color: #222;
+    color: #fff;
+    height: 400px;
+    text-align:center;
+    padding-top:100px;
+    border-radius: 0;
+    margin-top: -25px;
+}*/
+
+/*#banner-inicio h1{
+    color:#fff;
+}*/
+
+.navbar-brand{
+    color:#fff;
+    font-size: 18px;
+    margin-top: -5px;
+    margin-right: 0;
+    line-height: 32px;
+    vertical-align:middle;
+    display:inline-block;
+}
+
+.navbar-brand .glyphicon{
+    font-size:32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navbar-brand .glyphicon:hover{
+    color: #748fbf;
+}
+}
+.navbar-inverse .navbar-brand {
+    color:#fff;
+}
+
+
+.home-search-form {
+    margin-right: 10px;
+}
+
+.btn-search {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*.navbar-inverse{
+    background-color:#23303a;
+}*/
+
+.navbar-nav > li > a {
+    font-size: 16px;
+}
+
+#txtPesquisaCurso{
+    background-color: rgba(255, 255, 255, 0.06);
+    color:#fff;
+    border: none;   
+}
+
+
+
+
+.footer {
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;*/
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding-top: 25px;
+  padding-bottom: 25px; 
+  margin-top: 8em;
+}
+
+
+#detalhes-inicio div{
+    text-align:center;
+}
+
+#detalhes-inicio div .glyphicon{
+    font-size: 50px;
+    color: #15a589;
+}
+
+.aoxo{
+    
+    font-family: verdana;
+}
+
+.aoxo .a{
+    color: #15a589;
+}
+
+.aoxo .o{
+    color:#d3532a;
+}
+.aoxo .x{
+    color: #748fbf;
+}
+.aoxo .q{
+    color: #ce88de;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #e95420;
+}
+
+.navbar-inverse .navbar-link:hover {
+    color: #15a589;
+}
+
+.selecionar-curso {
+    height: 200px !important;
+}
+
+.estrela-classificacao {
+    color: gold;
+    font-size: 20px;
+}
+
+.capitulos-container {
+    width: 700px;
+}
+
+.capitulos {
+    margin-top: 50px;
+}
+
+.capitulos .capitulo {
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    font-size: 17px;
+}
+
+.capitulos .video {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: solid 1px #ccc;
+    padding-left: 25px;
+}
+
+
+.capitulos .video a {
+    color: #000;
+}
+
+.capitulos .glyphicon {
+    margin-right: 10px;
+}
+
+.full-width-div .row {
+    margin: 0;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.capitulos-player {
+    margin-top: 0px;
+}
+
+.capitulos-player .capitulo {
+    /*padding: 10px 10px;*/
+    border-bottom: solid 1px #262626;
+    /*border-top: solid 1px #262626;*/
+    font-size: 15px;
+    color: #5c2040;
+}
+
+.capitulos-player .video {
+    padding: 10px 0px 10px 5px;
+    /*background-color: #060606;*/
+    color: #778899;
+    /*border-bottom: solid 1px #262626;*/
+    /*padding-left: 25px;*/
+    font-size: 13px;
+}
+
+.capitulos-player .video.selecionado {
+    color: green;
+}
+
+.capitulos-player .video.selecionado a {
+    color: green !important;
+}
+
+.capitulos-player .video a {
+    color: #778899;
+}
+
+.capitulos-player .glyphicon {
+    margin-right: 10px;
+}
+
+
+/* USER PROFILE */
+#content{
+    width:900px;
+    float:right;
+
+}
+#sidebarAluno{
+    background:#eee;
+    width:230px;
+
+}
+
+#sidebar{
+    background:#eee;
+    width:230px;
+    /*float:left;*/
+}
+
+
+#foto{
+    width:220px;
+    height:200px;
+    margin:5px;
+}
+#foto img{
+    width:220px;
+    height:200px;
+}
+@media(max-width:768px){
+    #dados{
+        margin-left: 5em;
+        text-align: center;
+    }
+}
+#dados{
+    width:220px;
+    margin:1px 5px;
+}
+
+#dados h1{
+    text-align:center;
+    font-size: 15px;
+    margin:5px 0px;
+
+}
+#dados h2{
+    text-align:center;
+    font:15px Verdana;
+    margin:5px 0px;
+}
+#dados h3{
+    /*background:#0E96E5;*/
+    text-align:center;
+    font:15px Verdana;
+    /*color:#FFF;*/
+    margin:5px 0px;
+}
+
+#dados p{
+    text-align:justify;
+  
+}
+#meus-cursos h1{
+    font-size: 25px;
+}
+#meus-cursos{
+    margin-left: 2em;
+}
+#mais-cursos h1{
+    font-size: 25px;
+}
+#mais-cursos{
+    margin-left: 2em;
+}
+@media (max-width: 400px) {
+    .col-textos-pagina-registro {
+         padding-right: 2em;
+         /*text-align: center;*/
+    }
+}
+
+.li-footer{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.li-footer-icones li{
+    display: inline;
+    padding-right: 2px;
+}
+@media(min-width: 991px){
+    .detalhes-rodape{
+        padding-left: 25px;
+    }
+}
+
+.copyright-footer{
+    margin-top: 2em;
+    border-top: 1px solid #fff;
+    padding-top: 2em;
+}
+
+@media(max-width: 991px){
+    .footer{
+        text-align: center;
+    }
+    .detalhes-rodape{
+        padding-left: 0;
+}
+}
+@media (max-width: 400px) {
+    .col-textos-pagina-registro {
+         padding-right: 2em;
+         /*text-align: center;*/
+    }
+}
+
+
+.col-textos-pagina-registro h3{
+    font-size: 25px;
+    color: #5c2040;
+}
+.col-textos-pagina-registro p{
+    color: #696969;
+}
+.col-textos-pagina-registro{
+    padding-left: 2em;  
+}

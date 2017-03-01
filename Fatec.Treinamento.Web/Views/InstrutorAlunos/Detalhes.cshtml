@@ -1,0 +1,24 @@
+﻿@model Fatec.Treinamento.Model.Usuario
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+<div>
+    <div id="sidebarAluno">
+
+        <div id="foto">
+            <img src="~/img/tim.jpg" />
+        </div>
+        <div id="dados">
+            <h1>@Html.DisplayFor(model => model.Nome)</h1>
+            <h2 class="icon-envelop">@Html.DisplayFor(model => model.Email)</h2>
+            <h3>MEU ID DE ALUNO:<b>@Html.DisplayFor(model => model.Id)</b></h3>
+        </div>
+    </div>
+<p>
+    <h1>@Html.ActionLink("Voltar", "Index")</h1>
+</p>
+
+</div>

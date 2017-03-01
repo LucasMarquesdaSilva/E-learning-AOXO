@@ -1,0 +1,37 @@
+﻿@model Fatec.Treinamento.Model.Usuario
+@{
+    ViewBag.Title = "Usuário";
+}
+
+<div class="row">
+    <div id="sidebar" class="col-md-3 col-xs-12">
+
+        <div id="foto">
+            <img src="~/img/tim.jpg" />
+        </div>
+        <div id="dados">
+            <h1>@Html.DisplayFor(model => model.Nome)</h1>
+            <h2>@Html.DisplayFor(model => model.Email)</h2>
+            <h2>Posição no ranking: 8º</h2>
+
+            <h2><a href="">Mensagens(7)</a></h2>
+            <h3>ID:<b>@Html.DisplayFor(model => model.Id)</b></h3>
+        </div>
+    </div>
+    <div class="content col-md-9 col-xs-12">
+        <div id="meus-cursos">
+            <h1>MEUS CURSOS:</h1>
+            <p>Confira e estude seus cursos!</p>
+            <h3>@Html.ActionLink("Meus Cursos", "MeusCursos")</h3>
+
+            <hr />
+        </div>
+        <div id="mais-cursos">
+            <h1>MAIS CURSOS:</h1>
+            <p>Confira nossos outros cursos!</p>
+            <h3>@Html.ActionLink("Mais Cursos", "MaisCursos")</h3>
+            <hr />
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,92 @@
+﻿@model Fatec.Treinamento.Web.Models.RegistroUsuarioViewModel
+
+@{
+    ViewBag.Title = "Registrar novo usuário";
+}
+@section styles {
+    <style>
+        body {
+            font-family: "BentonSans", "Helvetica Neue", sans-serif;
+        }
+        .panel-body{
+            margin: 5% 10% 0 10%;
+        }
+        .panel-default{
+            width: 90%;
+            margin: auto;
+        }
+        .btn-registrar{
+            width: 100%;
+        }
+        hr{
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+            color: #26a998;
+        }
+        .col-registrar-usuario{
+            padding-top: 2em;
+        }
+
+    </style>
+}
+<h1>Faça seu cadastro abaixo</h1>
+<hr />
+<div class="row">
+    <div class="col-md-12 col-registrar-usuario">
+        <div class="col-md-8 col-textos-pagina-registro">
+            <h3>Crie uma Conta Gratuita</h3>
+             <p>Crie uma conta e tenha acesso a uma variedade de cursos.</p>
+            <h3>Faça amizades</h3>
+            <p>Converse com outros alunos e troque conhecimentos.</p>
+            <h3>Contato profissional</h3>
+            <p>Tenha acesso aos conteúdos das empresas e converse com os profissionais da área.</p>
+            <h3>Exercícios</h3>
+            <p>Faça os exercícios para praticar os conteúdos aprendidos nas vídeo aulas.</p>
+        </div>
+        <div class="col-md-4 col-forms">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    @using (Html.BeginForm("Registrar", "Usuario", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                        @Html.AntiForgeryToken()
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-user glyphicon-registro"></span></div>
+                                @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", @placeholder = "Nome" })
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope glyphicon-registro"></span></div>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-lock glyphicon-registro"></span></div>
+                                @Html.PasswordFor(m => m.Senha, new { @class = "form-control", @placeholder = "Senha" })
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Senha, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-lock glyphicon-registro"></span></div>
+                                @Html.PasswordFor(m => m.ConfirmacaoSenha, new { @class = "form-control", @placeholder = "Confirmar Senha" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-registrar" value="Registrar" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,57 @@
+﻿@model Fatec.Treinamento.Model.Video
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Video</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCapitulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCapitulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracaoFormatada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuracaoFormatada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoYoutube)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoYoutube)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.Id }) |
+</p>

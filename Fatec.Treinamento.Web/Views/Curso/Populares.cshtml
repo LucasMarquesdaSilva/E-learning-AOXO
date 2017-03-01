@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Fatec.Treinamento.Model.DTO.DetalhesCurso>
+
+@{
+    ViewBag.Title = "Pesquisar";
+}
+
+<h3>@Model.Count() Cursos mais bem ranqueados</h3>
+
+@Html.Partial("ListagemCursos")
+

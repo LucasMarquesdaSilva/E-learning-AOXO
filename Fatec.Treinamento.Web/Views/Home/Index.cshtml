@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Treinamentos AOXO";
+}
+@section styles {
+    <style>
+.body-content{
+    padding-top: 0;
+}
+    </style>
+}
+<div class="full-width-div">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../img/banner-1.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="../img/banner-2.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="../img/banner-3.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="detalhes-inicio" class="row">
+    <div class="col-md-4 conteudo-home">
+        <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+        <h3>Nossas Trilhas</h3>
+        <p>
+            No sistema Fatec de treinamentos, você pode escolher a trilha de estudo designada pelo seu gestor para alavancar seus conhecimentos e
+            aprimorar seu trabalho.
+        </p>
+        <p><a class="btn btn-link" href="@Url.Action("Trilhas","Help")">Saiba mais &raquo;</a></p>
+    </div>
+    <div class="col-md-4 conteudo-home">
+        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+        <h3>Autores</h3>
+        <p>Veja quem são os autores dos cursos, tire dúvidas, contribua e torne-se também um dos autores do sistema de treinamentos e ajude seus colegas.</p>
+        <p><a class="btn btn-link" href="@Url.Action("Autores","Help")">Saiba mais &raquo;</a></p>
+    </div>
+    <div class="col-md-4 conteudo-home">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+        <h3>Atinja suas metas</h3>
+        <p>
+            A cada treinamento realizado, você acumula pontos que contribuem para os programas de avaliação de desempenho e busca do conhecimento. <br />
+            Você poderá obter bônus exclusivos desses programas.
+        </p>
+        <p><a class="btn btn-link" href="@Url.Action("Pontos","Help")">Saiba mais &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Fatec.Treinamento.Model.DTO.DetalhesCurso>
+
+@{
+    ViewBag.Title = "Pesquisar";
+}
+@section styles{
+    <style>
+        .footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>    
+}
+
+<h4>@Model.Count() Cursos </h4>
+
+@Html.Partial("ListagemCursos")
+

@@ -1,0 +1,65 @@
+﻿@model Fatec.Treinamento.Model.Video
+
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluir</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Video</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCapitulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCapitulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracaoFormatada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuracaoFormatada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoYoutube)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoYoutube)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

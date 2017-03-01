@@ -1,0 +1,49 @@
+﻿@model Fatec.Treinamento.Model.Capitulo
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Capitulo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pontos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pontos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempoTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempoTotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+</p>

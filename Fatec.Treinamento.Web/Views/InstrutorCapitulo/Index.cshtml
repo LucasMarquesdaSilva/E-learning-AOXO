@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Fatec.Treinamento.Model.Capitulo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Capítulos</h2>
+
+<p>
+    @Html.ActionLink("Criar Capítulo", "Criar", new {ViewBag.IdCurso})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Pontos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempoTotal)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.Nome, "Index", "InstrutorVideo", new { id = item.Id }, null)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Pontos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TempoTotal)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+                @Html.ActionLink("Detalhes", "Detalhes", new { id = item.Id }) |
+                @Html.ActionLink("Excluir", "Excluir", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

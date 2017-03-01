@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Fatec.Treinamento.Model.Video>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Criar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCapitulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DuracaoFormatada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoYoutube)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCapitulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracaoFormatada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoYoutube)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+                @Html.ActionLink("Detalhes", "Detalhes", new { id = item.Id }) |
+                @Html.ActionLink("Excluir", "Excluir", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
