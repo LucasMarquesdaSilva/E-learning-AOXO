@@ -15,7 +15,7 @@ de uma plataforma de E-learning em ASP.NET MVC para colocar em prática os conce
 O projeto foi desenvolvido pelos seguintes alunos:
 * Everton Roberto
 * Gabriel Correia
-* [@GregoriFeliciano](https://github.com/GregoriFelicio)
-* [@LucasMarquesdaSilva] (https://github.com/LucasMarquesdaSilva)
+* [GregoriFeliciano](https://github.com/GregoriFelicio)
+* [LucasMarquesdaSilva] (https://github.com/LucasMarquesdaSilva)
 * Rodrigo Miyazaki
 * Victória Hollinger
