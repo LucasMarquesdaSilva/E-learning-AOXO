@@ -14,7 +14,7 @@ de uma plataforma de E-learning em ASP.NET MVC para colocar em prática os conce
 ### Integrantes do Grupo
 O projeto foi desenvolvido pelos seguintes alunos:
 * Gabriel Correia
-* Gregory Feliciano
+* [@GregoriFeliciano](https://github.com/GregoriFelicio)
 * [@LucasMarquesdaSilva] (https://github.com/LucasMarquesdaSilva)
 * Rodrigo Miyazaki
 * Victória Hollinger
